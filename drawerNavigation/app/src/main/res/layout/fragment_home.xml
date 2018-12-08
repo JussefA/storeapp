@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/homefragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fragment_background">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="170dp"
+            android:layout_height="180dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/bgcointainer"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txvwEquipm"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Furniture and Equipment"
+                android:textAlignment="center"
+                android:textColor="@color/AzulMasFuerte"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imvwEquipm" />
+
+            <ImageView
+                android:id="@+id/imvwEquipm"
+                android:layout_width="155dp"
+                android:layout_height="120dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="TODO"
+                android:src="@drawable/mobiliario"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="170dp"
+            android:layout_height="180dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/bgcointainer"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/constraintLayout4"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/txvwRehabilitacion"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Rehabilitation"
+                android:textAlignment="center"
+                android:textColor="@color/AzulMasFuerte"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imvwRehab" />
+
+            <ImageView
+                android:id="@+id/imvwRehab"
+                android:layout_width="155dp"
+                android:layout_height="120dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/rehabilitacion"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.993"
+                app:layout_constraintStart_toEndOf="@+id/txvwRehabilitacion"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout4"
+            android:layout_width="170dp"
+            android:layout_height="180dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/bgcointainer"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/txvwOperat"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Operating Theater"
+                android:textAlignment="center"
+                android:textColor="@color/AzulMasFuerte"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imvwOperat" />
+
+            <ImageView
+                android:id="@+id/imvwOperat"
+                android:layout_width="155dp"
+                android:layout_height="120dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="TODO"
+                android:src="@drawable/quirofano"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="170dp"
+            android:layout_height="180dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/bgcointainer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/constraintLayout2"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txvwSupport"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Life Support"
+                android:textAlignment="center"
+                android:textColor="@color/AzulMasFuerte"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imvwLife" />
+
+            <ImageView
+                android:id="@+id/imvwLife"
+                android:layout_width="155dp"
+                android:layout_height="120dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="TODO"
+                android:src="@drawable/vida"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="Azul">#79cbfd</color>
+    <color name="AzulFuerte">#59a8fd</color>
+    <color name="AzulMasFuerte">#056df5</color>
+    <color name="Rojo">#fa0a12</color>
+    <color name="Verde">#2af722</color>
+    <color name="Morado">#7629ea</color>
+    <color name="Blanco">#ffffff</color>
+</resources>

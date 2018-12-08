@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_store"
+            android:icon="@drawable/ic_store_black_24dp"
+            android:title="Store"/>
+        <item
+            android:id="@+id/nav_shop_car"
+            android:icon="@drawable/ic_shopping_cart"
+            android:title="Shop_Car" />
+
+        <item
+            android:id="@+id/nav_wish_list"
+            android:icon="@drawable/ic_wishlist_24dp"
+            android:title="wish_List"/>
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_manage"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Settings" />
+        </menu>
+    </item>
+
+</menu>

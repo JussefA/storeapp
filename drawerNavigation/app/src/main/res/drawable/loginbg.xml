@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/Azul"></solid>
+
+            <!--el degradado empieza de abajo hacia arriba-->
+            <gradient
+                android:angle="90"
+                android:endColor="@color/Azul"
+                android:centerColor="@color/Blanco"
+                android:startColor="@color/Azul">
+
+            </gradient>
+
+        </shape>
+
+    </item>
+
+</selector>
