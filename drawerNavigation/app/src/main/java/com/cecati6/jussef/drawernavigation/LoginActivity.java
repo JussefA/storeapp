@@ -10,6 +10,7 @@ public class LoginActivity extends AppCompatActivity {
 
     Button sign;
     Button login;
+    //primer comentario clonado
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
