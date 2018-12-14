@@ -18,8 +18,6 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 
-
-//;oAKsjdlkaJSDlkajsdhlKAJSDHLa
 public class StoreFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
