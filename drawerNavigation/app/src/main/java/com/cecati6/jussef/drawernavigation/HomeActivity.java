@@ -16,7 +16,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 public class HomeActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener, StoreFragment.OnFragmentInteractionListener, ShopCarFragment.OnFragmentInteractionListener, WishListFragment.OnFragmentInteractionListener,SettingsFragment.OnFragmentInteractionListener, HomeFragment.OnFragmentInteractionListener {
+        implements NavigationView.OnNavigationItemSelectedListener, StoreFragment.OnFragmentInteractionListener, ShopCarFragment.OnFragmentInteractionListener, WishListFragment.OnFragmentInteractionListener,SettingsFragment.OnFragmentInteractionListener, HomeFragment.OnFragmentInteractionListener, FragmentLife.OnFragmentInteractionListener {
 
     boolean fragmentSelected = false;
 
@@ -99,7 +99,7 @@ public class HomeActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_store) {
 
-            myFragment=new StoreFragment();
+            myFragment = new FragmentLife();
             fragmentSelected=true;
 
         } else if (id == R.id.nav_shop_car) {
