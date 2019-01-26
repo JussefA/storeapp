@@ -96,7 +96,6 @@ public class HomeActivity extends AppCompatActivity
         if (id == R.id.nav_home) {
             myFragment = new HomeFragment();
             fragmentSelected=true;
-
         } else if (id == R.id.nav_store) {
 
             myFragment = new FragmentLife();

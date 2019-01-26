@@ -3,10 +3,20 @@ package com.cecati6.jussef.drawernavigation;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
+import com.cecati6.jussef.drawernavigation.CustomAdapters.ShopingCustomAdapter;
+import com.cecati6.jussef.drawernavigation.DataModels.ShopDataModel;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -27,10 +37,28 @@ public class ShopCarFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+
+
+
+    }
+
+    //List View
+    public ListView listViewTE;
+    private ShopingCustomAdapter mAdapter;
+//    private ArrayAdapter<ShopDataModel> mAdapter;
+//
+
     private OnFragmentInteractionListener mListener;
 
     public ShopCarFragment() {
         // Required empty public constructor
+
+
+
+
     }
 
     /**
@@ -48,6 +76,7 @@ public class ShopCarFragment extends Fragment {
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
+
         return fragment;
     }
 
@@ -58,13 +87,40 @@ public class ShopCarFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        View view = inflater.inflate(R.layout.fragment_shop_car, container, false);
+
+        //        listView = getView().findViewById(R.id.lvitems);
+
+        listViewTE = view.findViewById(R.id.lvitems);
+
+        ArrayList<ShopDataModel> listadeitems = new ArrayList<>();
+        listadeitems.add(new ShopDataModel("Item1",R.drawable.desfibrilador));
+        listadeitems.add(new ShopDataModel("Item2",R.drawable.desfibrilador2));
+        listadeitems.add(new ShopDataModel("Item3",R.drawable.desfibrilador));
+        listadeitems.add(new ShopDataModel("Item4",R.drawable.desfibrilador2));
+
+
+        mAdapter = new ShopingCustomAdapter(getActivity().getApplicationContext(),listadeitems);
+
+//        mAdapter = new ArrayAdapter<ShopDataModel>(getContext(),R.layout.item_car,listadeitems);
+
+
+        Log.e("LISTA DE ARTICULOS" , listadeitems.toString());
+        listViewTE.setAdapter(mAdapter);
+
+
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_shop_car, container, false);
+        return view;
+
     }
 
     // TODO: Rename method, update argument and hook method into UI event
